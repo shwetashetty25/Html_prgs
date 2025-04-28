@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Minimal Product Table</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bill.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: pink;
+            padding: 40px; 
+            text-align: center;
+        }
+
+        h2 {
+            color: rgb(148, 5, 53);
+            margin-bottom: 30px;
+        }
+
+        table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            background-color: whitesmoke;
+            border: 1px solid #f3b0b0;
+        }
+
+        th td {
+            padding: 16px;
+            border: 1px solid #f3b0b0;
+            font-size: 15px;
+        }
+
+        th {
+            background-color: #f1a7a7;
+            color: #5f1f1f;
+        }
+
+        tr:nth-child(even) {
+            background-color: whitesmoke;
+        }
+
+        td {
+            color: #5f1f1f;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Product Purchase Summary</h2>
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+        </tr>
+        <tr>
+            <td>Perfume</td>
+            <td>250</td>
+            <td>1KG</td>
+            <td rowspan="3">575</td>
+        </tr>
+        <tr>
+            <td>Soap</td>
+            <td>255</td>
+            <td>5 packets</td>
+        </tr>
+        <tr>
+            <td>Face Wash</td>
+            <td>70</td>
+            <td>1</td>
+        </tr>
+    </table>
+</body>
+
+</html>
